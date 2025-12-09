@@ -7,15 +7,14 @@ using namespace std;
 // Einstiegspunkt des Programms
 int main() {
     // Programmcode kommt hier hinein
-    //github.com/maikrom/aud2025
-    int magicNumber;
-    cout << "Welche Zahl?" << endl;
-    cin >> magicNumber;
+    int korrektes_Passwort = 1234;
+    int benutzer_Passwort;
 
-    while (magicNumber <= 0){
-        cout << "Welche Zahl?" << endl;
-        cin >> magicNumber;
-    }
-    cout << magicNumber << endl;
+    do{
+        cout << "Was ist das Passwort?" << endl;
+        cin >> benutzer_Passwort;
+    }while(benutzer_Passwort != korrektes_Passwort);
+
+    cout << "Zugang erlaubt!" << endl;
     return 0; // Rückgabewert; signalisiert, dass das Programm erfolgreich beendet wurde.
 }

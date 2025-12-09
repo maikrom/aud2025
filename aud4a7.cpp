@@ -7,15 +7,17 @@ using namespace std;
 // Einstiegspunkt des Programms
 int main() {
     // Programmcode kommt hier hinein
-    //github.com/maikrom/aud2025
-    int magicNumber;
-    cout << "Welche Zahl?" << endl;
-    cin >> magicNumber;
+    int n;
+    int summe = 0;
+    
+    cout << "Gib mir eine Zahl:" << endl;
+    cin >> n;
 
-    while (magicNumber <= 0){
-        cout << "Welche Zahl?" << endl;
-        cin >> magicNumber;
+    for(int i=1;i<=n;i++){
+        summe += i;
     }
-    cout << magicNumber << endl;
+
+    cout << "Die Summe ist:" << summe << endl;
+
     return 0; // Rückgabewert; signalisiert, dass das Programm erfolgreich beendet wurde.
 }
