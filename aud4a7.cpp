@@ -11,7 +11,8 @@ int main() {
     int summe = 0;
     
     cout << "Gib mir eine Zahl:" << endl;
-    cin >> n;
+    // cin >> n;
+    n = 100;
 
     for(int i=1;i<=n;i++){
         summe += i;

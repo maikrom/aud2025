@@ -8,9 +8,9 @@ using namespace std;
 int main() {
     // Programmcode kommt hier hinein
     int wochentag;
+
     cout << "Welcher Wochentag?" << endl;
     cin >> wochentag;
-
     switch (wochentag){
         case 1: 
         cout << "Montag" << endl;
@@ -35,7 +35,7 @@ int main() {
         break;
         default:
         cout << "Ungültige Eingabe" << endl;
-        break;
+        break; // break hier im letzen case theoretisch überflüssig
     }
     return 0; // Rückgabewert; signalisiert, dass das Programm erfolgreich beendet wurde.
 }
