@@ -1,0 +1,6 @@
+*.dSYM
+*.o
+/bin/*
+*.DS_Store
+aud4.cpp
+*.vscode
